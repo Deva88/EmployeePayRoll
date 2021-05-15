@@ -100,4 +100,25 @@ html body {
     border-radius: 4px;
     resize: vertical;
   }
-  © 2021 GitHub, Inc.
+  
+  profile-radio-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-radio-content > text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lable {
+    min-width: 140px;
+  }
+
+  .profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+  }
+ 
