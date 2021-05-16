@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="employeePayRoll.css">
+
     <link href="https://fonts.googleapis.com?family=Monserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,500&display=swap" rel="stylesheet>"/>
     <title>Employee Pay Roll App</title>
   </head>
+
   <!-- @Description-Create an Employee Payroll system UI, Employee payroll App with Logo-->
+  
   <body>
+    <script defer src="employeePayRoll.js"></script>
     <header class="header-content header">
       <div class="logo-content">
         <img src="../assets/images/logo.png" alt="logo" />
@@ -21,6 +25,7 @@
     </header>
 
      <!-- @Description- Ability to create a Form Header and the Input Text Element for Name -->
+  
      <div class="form-content">
       <form class="form" action="#" onsubmit="save(); return false">
           <div class="form-head">Employee Payroll Form</div>
@@ -28,7 +33,8 @@
               <label class="label text" for="name">Name</label>
               <input class="input" type="text" id="name" name="name" placeholder="Your name.." required>
           </div>
-           <!--  @Description- Specify Profile Pic to the Employee Payroll App -->
+  
+          <!--  @Description- Specify Profile Pic to the Employee Payroll App -->
 
            <div class="row-content">
             <div class="profile-radio-content">
@@ -50,7 +56,42 @@
                     <img class="profile" id="image4" src="../assets/profile-images/Ellipse -4.png">
                 </label>
             </div>
+            </div>
+            
+            <!-- @Description- Specify gender, department and salary with radio button, checkbox and range respectively -->
+
+            <div class="row-content">
+              <label class="label text" for="gender">Gender</label>
+              <div>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label class="text" for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label class="text" for="female">Female</label>
+              </div>
+          </div>
+
+            <div class="row-content">
+              <label class="label text" for="department">Department</label>
+              <div>
+                  <input type="checkbox" id="hr" name="department" value="HR">
+                  <label class="text" for="hr">HR</label>
+                  <input type="checkbox" id="sales" name="department" value="Sales">
+                  <label class="text" for="sales">Sales</label>
+                  <input type="checkbox" id="finance" name="department" value="Finance">
+                  <label class="text" for="finance">Finance</label>
+                  <input type="checkbox" id="engineer" name="department" value="Engineer">
+                  <label class="text" for="engineer">Engineer</label>
+                  <input type="checkbox" id="others" name="department" value="Others">
+                  <label class="text" for="others">Others</label>
+              </div>
+            </div>   
+          
+          <div>
+            <label class="lebel text" for="salary">Choose your salary:</label>
+                <input class="input" type ="range" id="salary" name="salary" min="20000"max="70000"step="100"value="40000">
+                <output class="salary-output text" for="salary">40000</output>
+          </div>
       </form>
-  </div>
+      </div>
   </body>
 </html>
