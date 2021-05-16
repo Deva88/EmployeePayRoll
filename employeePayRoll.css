@@ -149,3 +149,42 @@ html body {
     color: #42515f;
     background-color: transparent;
   } 
+
+  .buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 148px;
+    padding: 7px 7px;
+    border: 7px  #707070;
+    cursor: pointer;
+  }
+
+  .notes{
+    height: 100px;
+    width: 100px;
+}
+
+  .submitButton {
+    border: none;
+    background-color: #e7e7e7;
+    margin-right: 30px;
+  }
+
+  .cancelButoon {
+    
+    text-decoration: node;
+    text-align: center;
+  }
