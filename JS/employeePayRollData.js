@@ -43,9 +43,7 @@ class EmployeePayrollData {
         this._startDate = _startDate;
     }
 
-    /*Using toString() method
-    * return id,name,gender,profilePic,department,salary,startDate,notes
-    */   
+    //method 
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.startDate ? "undefined" :
@@ -56,11 +54,3 @@ class EmployeePayrollData {
     }
 
 }
-
-const salary = document.querySelector('#salary')
-const output = document.querySelector('.salary-output')
-output.textContent = salary.value;
-salary.addEventListener('input', 
-    function(){
-    output.textContent = salary.value
-});
